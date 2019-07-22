@@ -4,7 +4,7 @@
 
   <groupId>com.oracle.oci.sdk</groupId>
   <artifactId>oci-hdfs</artifactId>
-  <version>2.7.7.3</version>
+  <version>3.2.0.0</version>
   <packaging>pom</packaging>
 
   <name>Oracle Cloud Infrastructure HDFS Connector for Storage Service</name>
@@ -13,7 +13,7 @@
   <inceptionYear>2016</inceptionYear>
 
   <properties>
-    <hadoop.version>2.7.7</hadoop.version>
+    <hadoop.version>3.2.0</hadoop.version>
   </properties>
 
   <profiles>
@@ -205,7 +205,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.16.7</version>
+      <version>1.16.8</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
