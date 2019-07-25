@@ -83,6 +83,8 @@
             </goals>
             <configuration>
               <shadedClassifierName>shaded</shadedClassifierName>
+              <finalName>oci-hdfs-connector-full-${version}</finalName>
+              <createDependencyReducedPom>false</createDependencyReducedPom>
               <artifactSet>
                 <includes>
                   <include>org.javassist</include>
