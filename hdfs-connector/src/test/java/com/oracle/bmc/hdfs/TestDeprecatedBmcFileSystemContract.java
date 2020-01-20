@@ -11,13 +11,15 @@ import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystemContractBaseTest;
 import org.apache.hadoop.fs.Path;
 import org.junit.experimental.categories.Category;
+import static org.junit.Assert.*;
+import org.junit.Before;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Category({IntegrationTestCategory.class})
 public class TestDeprecatedBmcFileSystemContract extends FileSystemContractBaseTest {
-    @Override
+    @Before
     protected void setUp() throws Exception {
         final Configuration configuration =
                 new Configuration() {
@@ -32,12 +34,12 @@ public class TestDeprecatedBmcFileSystemContract extends FileSystemContractBaseT
         super.fs = contract.getTestFileSystem();
     }
 
-    @Override
+/*    @Override
     protected void tearDown() throws Exception {
         super.tearDown();
 
         super.fs.delete(new Path("/existingobjects"), true);
-    }
+    }*/
 
     @Override
     public void testMkdirsWithUmask() throws Exception {
